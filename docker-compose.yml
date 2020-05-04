@@ -4,7 +4,7 @@ services:
     instanceid-api-news:
         build: news-api/
         container_name: instanceid-api-news
-        entrypoint: ["bash", "/entrypoint.sh"]
+        entrypoint: ["bash", "json-server -p 9004 -H 0.0.0.0 http://instance.id/news/index.json"]
         ports:
             - "9004:9004"
         restart: always

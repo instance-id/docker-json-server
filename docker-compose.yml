@@ -1,0 +1,16 @@
+version: '3.7'
+
+services:
+    instanceid-api-news:
+        build: news-api/
+        container_name: instanceid-api-news
+        ports:
+            - "9004:9004"
+        restart: always
+        networks:
+            - instanceid-api
+
+networks:
+    instanceid-api:
+      driver: bridge
+      name: instanceid-api-net

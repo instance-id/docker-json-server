@@ -1,5 +1,5 @@
 FROM node:latest
-MAINTAINER Christian Lück <christian@lueck.tv>
+MAINTAINER instance.id
 
 RUN npm install -g json-server
 

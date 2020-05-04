@@ -2,7 +2,7 @@
 
 args="$@"
 
-args="$@ --static"
+args="$@"
 host="-H 0.0.0.0"
 port="-p 9004"
 dest="http://instance.id/news/index.json"

@@ -7,6 +7,6 @@ WORKDIR /data
 VOLUME /data
 
 EXPOSE 9004
-ADD run.sh /run.sh
-ENTRYPOINT ["bash", "/run.sh"]
+ADD entrypoint.sh /entrypoint.sh
+ENTRYPOINT ["bash", "/entrypoint.sh"]
 CMD []

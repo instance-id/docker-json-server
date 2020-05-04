@@ -2,7 +2,11 @@
 
 args="$@"
 
-args="$@ -p 80"
+args="$@ -p 9004"
+
+host="-H 0.0.0.0"
+
+dest="https://instance.id/news/index.json"
 
 file=/data/db.json
 if [ -f $file ]; then
@@ -16,4 +20,4 @@ if [ -f $file ]; then
     args="$args file.js"
 fi
 
-json-server $args
+json-server $args $host $dest

@@ -6,6 +6,6 @@ args="$@ -p 9004 --static"
 
 host="-H 0.0.0.0"
 
-dest="https://instance.id/news/index.json"
+dest="http://instance.id/news/index.json"
 
 json-server $args $host $dest

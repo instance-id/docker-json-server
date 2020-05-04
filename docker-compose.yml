@@ -4,11 +4,14 @@ services:
     instanceid-api-news:
         build: news-api/
         container_name: instanceid-api-news
+        entrypoint: news-api/entrypoint.sh
         ports:
             - "9004:9004"
         restart: always
         networks:
             - instanceid-api
+        volumes:
+            - ./.certs/:/certs/
 
 networks:
     instanceid-api:

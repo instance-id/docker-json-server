@@ -12,6 +12,7 @@ services:
             - instanceid-api
         volumes:
             - ./.certs/:/certs/
+            - ./news-api/:/news-api/
 
 networks:
     instanceid-api:

@@ -10,6 +10,5 @@ EXPOSE 9004
 
 ADD entrypoint.sh /entrypoint.sh
 
-ADD run.sh /run.sh
 ENTRYPOINT ["bash", "/entrypoint.sh"]
 CMD []

@@ -2,7 +2,7 @@
 
 args="$@"
 
-args="$@ -p 9004"
+args="$@ -p 9004 --static"
 
 host="-H 0.0.0.0"
 

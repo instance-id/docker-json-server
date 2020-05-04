@@ -4,7 +4,7 @@ services:
     instanceid-api-news:
         build: news-api/
         container_name: instanceid-api-news
-        entrypoint: /entrypoint.sh
+        entrypoint: ["bash", "/entrypoint.sh"]
         ports:
             - "9004:9004"
         restart: always
